@@ -16,6 +16,7 @@
 
 <body>
 <!--LOGO & NAVBAR-->
+
     <div class="main-container">
         <header>
             <a href="index.html"><img src="./images/logo/Booki.png" alt="logo booki"></a>
@@ -34,27 +35,24 @@
                     <h1>Trouvez votre Hébergements pour des vacances de rêves</h1>
                     <p>En plein centre-ville ou en pleine nature</p>
                 </div>
-<!-- RECHERCHE LIEU -->
+<!-- RECHERCHE LIEU & BOUTONS -->
 
-                <form class="search-form" action="#" method="get">
-                    <div class="search-label">
-                        <label form="rechercher"><i class="fa-solid fa-location-dot"></i></label>
-                    </div>
-                    <div class="search-text">
-                        <input type="text" id="rechercher" name="q" placeholder="Marseille, France">
-                    </div>
-<!-- BOUTONS LARGE ET MEDIUM -->
+<section class="location">
+    <form>
+        <label for="search">
+            <i class="fa-solid fa-location-dot"></i>
+        </label>
 
-                    <div class="2boutons">
-                        <div class="search-submit-large">
-                            <input type="submit" value="Rechercher">
-                        </div>
+        <input type="text" id="search" value="Marseille, France">
 
-                        <div class="search-submit-medium fas fa-search">
-                            <input type="submit-medium fas fa-search" value="rechercher">
-                    </div>
-                </form>
-            </section>
+        <button type="submit">
+            <span class="btn-desktop">Rechercher</span>
+
+            <span class="btn-mobile"><i class="fa-solid fa-magnifying-glass"></i></span>
+        </button>
+    </form>
+</section>
+
 
 <!--FILTRES-->
 
