@@ -27,6 +27,7 @@ body {
     margin: 0 auto;
     padding: 0 0px 0 0px;
 }
+
 /*HEADER*/
 header {
     display: flex;
@@ -61,6 +62,8 @@ h1 {
     width: 100%;
     font-weight: 700;
     line-height: 26px;
+    justify-content: flex-start;
+    align-items: center;
   }
 
 /*FORM*/ 
@@ -194,6 +197,7 @@ a {
     text-decoration: none;
 }
 
+
 .section-title {
     margin: 0;
     font-size: 22px;
@@ -202,7 +206,7 @@ a {
 .card {
     background-color: white;
     border-radius: 20px;
-    padding: 5px;
+    padding: 0px 0px 15px 0px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
