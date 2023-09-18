@@ -236,10 +236,16 @@ a {
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
     border-radius: 20px;
-    padding: 30px;
     box-sizing: border-box;
 }
 
+.titresection h2 { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+
+}
 
 /****** Hebergements ***********/
 .hebergements {
