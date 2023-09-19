@@ -237,16 +237,14 @@ a {
     background-color: var(--main-bg-color);
     border-radius: 20px;
     box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 60px;
 }
 
-.titresection h2 { 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 22px;
-
+ h2 { 
+    margin-left: 30px;
 }
-
+    
 /****** Hebergements ***********/
 .hebergements {
     background-color: #F2F2F2;
@@ -302,10 +300,10 @@ a {
 
 .show-more {
   color: black;
-  padding-left: 10px;
-  margin: 30px 0 0 20px;
-  display: flex;
-  flex-direction: column;
+  margin-left: 30px;
+  font-size: 18px;
+  font-weight: 700;
+  
 
 }
 
@@ -364,9 +362,81 @@ a {
     margin-bottom: 5px;
 }
 
+/***** Activités ***/
 
+.activites section {
+    width: 80%;
+    margin-top: 40px;
+    
+}
 
+.containerActivités {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    height: 496px;
+    margin: 20px 40px;
+    margin-bottom: 100px;
+    box-sizing: border-box;
+}
 
+.card-activités {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 16px #0000002e;
+}
+
+.card-activités h3 {
+    padding-left: 10px;
+    margin-bottom: 15px;
+    
+}
+.card-activités img {
+
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.activite1img, .activite2img, .activite3img, .activite4img {
+width: 297.5px;
+height: 380px;
+border-radius: 20px, 20px, 0px, 0px;
+box-sizing: border-box;
+padding: 20px, 19px, 20px, 19px;
+
+}
+
+/* FOOTER */ 
+
+footer {
+    background-color: #F2F2F2;
+    margin: 0 40px 0 40px;
+}
+.blocfooter {
+    display: flex;
+    max-width: 100%;
+    padding: 10px 40px;
+    box-sizing: border-box;
+}
+
+.footer-container {
+    width: 40%;
+}
+
+.footer-container h3 {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer-container a {
+    color: black;
+    display: block;
+    margin: 15px 0;
+    font-weight: 500;
+}
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
