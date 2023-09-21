@@ -66,6 +66,13 @@ h1 {
     align-items: center;
   }
 
+  .filtre-container p {
+    height: 21px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  
+
 /*FORM*/ 
 
 form {
@@ -206,8 +213,8 @@ a {
 .card {
     background-color: white;
     border-radius: 20px;
-    padding: 0px 0px 15px 0px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    padding: 5px;
 }
 
 .card img {
@@ -237,7 +244,7 @@ a {
     background-color: var(--main-bg-color);
     border-radius: 20px;
     box-sizing: border-box;
-    padding: 20px;
+    padding: 30px;
     margin-bottom: 60px;
 }
 
@@ -250,14 +257,16 @@ a {
     background-color: #F2F2F2;
     width: 100%;
     border-radius: 15px;
-    padding: 30px;
+    padding: 20px;
     gap: 30px;
 }
 
 .hebergements-cards {
     display: flex;
     flex-wrap: wrap;
-    margin: 10px 10px;
+    justify-content: space-between;
+    width: 100%;
+    gap: 30px;
 }
 
 .hotel {
@@ -266,7 +275,6 @@ a {
     border-radius: 20px;
     padding: 5px;
     box-sizing: border-box;
-    margin: 10px 1.5%;
     box-shadow: 0 5px 16px #0000002e;
 }
 
