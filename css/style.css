@@ -243,7 +243,8 @@ a {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
-    gap: 40px;
+    gap: 30px;
+    
 }
 
 .hebergements-and-populaires section {
@@ -259,16 +260,14 @@ a {
     background-color: #F2F2F2;
     width: 100%;
     border-radius: 15px;
-    padding: 20px;
     gap: 30px;
 }
 
 .hebergements-cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
     gap: 30px;
+    width: 100%;
 }
 
 .hotel {
@@ -283,7 +282,8 @@ a {
 .hotel a {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 207.25px;
+    width: 100%;
 }
 
 .hotel img {
