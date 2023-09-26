@@ -83,6 +83,12 @@ h1 {
   .activites-title h2 {
     gap: 30px;
   }
+  
+  .card-title-activites h3 {
+    font-size: 16px;
+    margin: 15px;
+  }
+
 
 /*FORM*/ 
 
@@ -236,6 +242,7 @@ a {
 
 .card-title {
     font-size: 16px;
+    
 }
 
 .euro {
@@ -431,7 +438,6 @@ a {
 
 footer {
     background-color: #F2F2F2;
-    margin: 0 40px 0 40px;
     gap: 30px;
 }
 .blocfooter {
@@ -465,12 +471,25 @@ footer {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media  (max-width: 1024px) {
+
+
+.main-container {
+    max-width: 1024px;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
 
     .hebergements {
         width: 100%;
+    }
+
+    .hebergements-cards {
+
     }
 
     .filtre-container {
@@ -503,7 +522,7 @@ footer {
     }
 
     .containerActivités {
-        
+        width: 70%;
     }
 
     .card-activités img {
