@@ -163,7 +163,9 @@ button {
     display: flex;
     gap: 10px;
     font-weight: bold;
-    padding:15px;
+    margin: 0;
+    padding-left: 15px;
+    
 }
 
 .filtre-container li {
@@ -400,7 +402,7 @@ margin-left: 15px ;
 }
 
 .activites-cards a {
-    width: 25%;
+    width: 30%;
 }
 
 .activites-cards .card {
@@ -416,11 +418,9 @@ margin-left: 15px ;
     border-radius: 20px 20px 0 0;
 }
 
-.activites-cards .card-content {
-    height: 15%;
-    display: flex;
+.activites-card-content {
     padding-left: 15px;
-    align-items: center;
+   
 }
 
 /* FOOTER */ 
@@ -461,6 +461,10 @@ footer {
 /* Medium devices (tablets, less/equal than 1024px) */
 @media  (max-width: 1024px) {
 
+.filtre-container ul {
+    margin: 0;
+    padding: 0;
+}
 
 .main-container {
     max-width: 1024px;
@@ -482,10 +486,11 @@ align-items: flex-start;
         width: 100%;
     }
 
+    /* POPULAIRES */
 
     .populaires {
         width: 100%;
-        margin-top: 50px;
+        
     }
 
     .populaires-cards {
@@ -507,24 +512,72 @@ align-items: flex-start;
         font-size: 13px;
     }
 
-    .containerActivites {
-        width: 100%;
-        height: 270px;
+/* ACTIVITES */
+.activites  {
+
+    margin-left: 15px;
+    padding: 0;
     }
 
+    .activites-title { 
+        font-size: 22px;
+        margin: 0;
+    }
+
+
+    .activites-cards a {
+        width: 30%;
+    }
+
+    .activites-cards img {
+        height: 200px;
+        width: 100%;
+    }
+
+    .activites-cards .card-content {
+       align-items: center;
+     
+    }
 
     .card-title-activites {
         font-size: 16px;
     }
 
-    .card-activites img {
-        height: 75%;
-    }
 
-    
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
-}
+    /* Main */ 
+    .main-container {
+        padding: 0;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center ;
+    }
+    /* Header */
+    header   {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    }
+    nav  {
+        
+        display: flex;
+        flex-direction: row;
+        font-size: 19px;
+        border-bottom: solid 2px #F2F2F2;
+    }
+
+    nav a:hover {
+        color: var(--main-color);
+        border-top:#0065fc00;
+        border-bottom-color: var(--main-color);
+    }
+
 }
