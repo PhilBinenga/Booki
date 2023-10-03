@@ -132,7 +132,6 @@ button {
     color: white;
     border-radius: 0px 15px 15px 0px;
     border:#0065FC;
-    width: auto;
     height: 100%;
     font-size: 18px;
     font-weight: 700;
@@ -546,38 +545,156 @@ align-items: flex-start;
 
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media all and (min-width: 300px) and (max-width: 767px) {
     /* Main */ 
     .main-container {
-        padding: 0;
+        width: 100%;
+        max-width: 767px;
+        padding:20px 0 20px 20px;
+        box-sizing: border-box;
+    }
+
+    /* Header */
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
     }
 
     nav {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center ;
-    }
-    /* Header */
-    header   {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    }
-    nav  {
-        
-        display: flex;
-        flex-direction: row;
+        width: 100%;
         font-size: 19px;
-        border-bottom: solid 2px #F2F2F2;
+        align-items: center;
+        border
+        border-bottom: 2px solid #F2F2F2;
     }
 
-    nav a:hover {
-        color: var(--main-color);
-        border-top:#0065fc00;
-        border-bottom-color: var(--main-color);
+
+    nav ul li a:hover {
+        border-bottom: 2px solid #0065fc;
+        border-top: none;
+        padding-bottom: 5px;
     }
 
-}
+    /* Subheader */ 
+
+    .subHeader {
+        padding: 0px, 20px, 0px, 20px;
+    }
+
+
+    /* Form & button */ 
+    
+    form {
+        display: flex;
+    }
+    
+    .btn-desktop  {
+        display: none;
+       
+    }
+    
+    .btn-mobile {
+        display: inline;    
+        position: relative;
+        border-radius: 15px;
+        padding: 15px, 16px, 15px, 16px;
+        border: 1px solid #0065FC;
+        background-color: #0065FC;
+    }
+
+    .btn-mobile i {
+        color: white;  
+    }
+
+    /* Filtre */ 
+
+    .filtre-container ul  {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+
+    /* Hebergement & populaire */ 
+
+    .hebergements-and-populaires {
+        flex-direction: column-reverse;
+    }
+    
+    .hebergements-and-populaires section {
+        border-radius: 0;
+    }
+
+    .populaires-cards, .hebergements-cards, .activites-cards{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .populaires a, .hotel,  .activites-cards a {
+        width: 100%;
+    }
+
+    .hebergements {
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    .populaires {
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+        padding: 0;
+    }
+
+    #hebergements {
+        background-color: white;
+    }
+
+    .hebergements-cards > #hotel-port {
+        order: 1;
+    }
+
+    .hebergements-cards > #hotel-amina {
+        order: 6;
+    }
+
+    .hebergements-cards > #hotel-mouettes {
+        order: 3;
+    }
+
+    .hebergements-cards > #hotel-mer {
+        order: 4;
+    }
+
+    .hebergements-cards > #hotel-canebiere {
+        order: 2
+    }
+
+    .hebergements-cards > #hotel-panier {
+        order: 5;
+    }
+
+    .hebergements-cards .card {
+        margin-bottom: 0;
+    }
+
+    .blocfooter {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        box-sizing: border-box;
+      
+    }
+
+
+
+    }
