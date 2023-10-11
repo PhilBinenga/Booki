@@ -42,17 +42,21 @@ header img {
 
 nav ul {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    gap: 69px;
-    margin: 23px 1px;
+    flex-direction: row;
+    gap: 68px;
     list-style: none;
+   
+    
 }
 
+nav a {
+    border: solid 2px #0065fc00;
+    padding-top: 16px;
+  
+}
 nav a:hover {
-    color:#0065FC;
-    border-top: solid #0065FC 5px;
-    padding-top: 20px;
+    color: var(--main-color);
+    border-top-color: var(--main-color);
 }
 
 /*TEXTE*/
@@ -557,11 +561,11 @@ align-items: flex-start;
 
     header {
         display: flex;
+        justify-content: space-between;
         flex-direction: column;
         align-items: center;
-        text-align: center;
-        border-top: none;
     }
+       
 
     .logo {
         display: flex;
@@ -573,15 +577,17 @@ align-items: flex-start;
         
         grid-template-columns: repeat(2, 1fr);
         text-align: center;
-        width: 100%;
+        width: 100vw;
         padding: 0; 
+        gap: 0;
     }
 
     nav li {
         border-bottom: 2px solid #d9d9d9;
         padding-bottom: 15px;
-        
-      }
+        width: 100%;  
+    }
+
     nav  li:hover {
         border-bottom: 2px solid #d9d9d9;
         border-bottom: 2px solid var(--main-color);
