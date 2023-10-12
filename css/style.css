@@ -46,17 +46,13 @@ nav ul {
     gap: 68px;
     list-style: none;
    
-    
 }
 
-nav a {
-    border: solid 2px #0065fc00;
-    padding-top: 16px;
-  
-}
+
 nav a:hover {
-    color: var(--main-color);
-    border-top-color: var(--main-color);
+    color:#0065FC;
+    border-top: solid #0065FC 5px;
+    padding-top: 14px;
 }
 
 /*TEXTE*/
